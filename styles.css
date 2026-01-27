@@ -38,6 +38,10 @@ nav ul {
   display: flex;
   gap: 20px;
   padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5;
+  z-index: 1000;
 }
 
 nav li {
@@ -83,6 +87,7 @@ footer {
 .hero-image {
   border-radius: 12px;
 }
+
 
 
 
