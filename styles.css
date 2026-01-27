@@ -1,13 +1,13 @@
-/* =========================
-   Basic Page Styling
-   ========================= */
-
 /* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* =========================
+   Basic Page Styling
+   ========================= */
 
 body {
   font-family: Arial, sans-serif;
@@ -42,6 +42,7 @@ img {
   height: auto;
   display: block;
 }
+
 
 
 
