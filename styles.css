@@ -29,5 +29,12 @@ nav a:hover {
   max-width: 800px;
 }
 
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 
