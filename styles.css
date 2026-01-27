@@ -17,6 +17,10 @@ body {
   margin: 20px;
 }
 
+h3 {
+  margin-top: 15px;
+}
+
 /* =========================
    HEADER
 ========================= */
@@ -72,6 +76,9 @@ img {
 footer {
   margin-top: 20px;
 }
+
+
+
 
 
 
