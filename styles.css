@@ -23,11 +23,11 @@ body {
 header {
   background-color: #222;
   color: #ffffff;
-  padding: 15px 20px;
+  padding: 15px;
 }
 
 /* =========================
-   NAVIGATION (UNORDERED LIST)
+   NAVIGATION
 ========================= */
 nav ul {
   list-style: none;
@@ -55,7 +55,6 @@ nav a:hover {
 ========================= */
 #content {
   max-width: 800px;
-  margin-top: 20px;
 }
 
 /* =========================
@@ -65,15 +64,13 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 15px 0;
 }
 
 /* =========================
    FOOTER
 ========================= */
 footer {
-  margin-top: 30px;
-  font-size: 0.9em;
+  margin-top: 20px;
 }
 
 
