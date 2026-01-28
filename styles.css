@@ -193,13 +193,15 @@ footer {
   width: 100%;
 }
 
-.map-container iframe {
+.map-container {
   width: 100%;
   max-width: 800px;
+  margin: 20px auto;
   border-radius: 12px;
-  display: block;
-  margin: 0 auto;
+  overflow: hidden;
 }
+
+
 
 
 
