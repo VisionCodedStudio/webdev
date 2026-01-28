@@ -118,6 +118,11 @@ h3 {
   font-size: 1.05rem;
 }
 
+#content ul li::before {
+  content: "• ";
+  color: #555;
+}
+
 /* =========================
    IMAGES
 ========================= */
@@ -161,5 +166,6 @@ footer {
     text-align: center;
   }
 }
+
 
 
