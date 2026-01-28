@@ -103,7 +103,6 @@ footer {
 /* =========================
    MOBILE LAYOUT FIX
 ========================= */
-@media (max-width: 600px) {
 
   body {
     margin: 0;
@@ -168,6 +167,7 @@ footer {
     text-align: center;
   }
 }
+
 
 
 
