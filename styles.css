@@ -125,6 +125,35 @@ footer {
   }
 }
 
+/* =========================
+   MOBILE FULL-WIDTH FIX
+========================= */
+@media (max-width: 600px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header,
+  nav,
+  main,
+  footer {
+    width: 100%;
+  }
+
+  #content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  header h1,
+  h2 {
+    text-align: center;
+  }
+}
+
 
 
 
