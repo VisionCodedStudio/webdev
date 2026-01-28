@@ -132,6 +132,15 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.lesson-item h3 {
+  margin-bottom: 0.25rem;
+}
+
+.lesson-item p {
+  margin-top: 0;
+}
+
+
 /* =========================
    FOOTER
 ========================= */
@@ -224,4 +233,5 @@ footer {
     color: #000;
   }
 }
+
 
