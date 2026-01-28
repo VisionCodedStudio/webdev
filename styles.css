@@ -8,7 +8,7 @@
 }
 
 /* =========================
-   BASE LAYOUT
+   BASE LAYOUT (MOBILE FIRST)
 ========================= */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -35,8 +35,9 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   padding: 10px;
   background-color: #fff;
   position: sticky;
@@ -50,11 +51,6 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
 /* =========================
    MAIN CONTENT
 ========================= */
@@ -66,36 +62,20 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   margin-bottom: 15px;
 }
 
 h3 {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 /* =========================
-   LESSONS PAGE ALIGNMENT
+   TEXT CONTENT
 ========================= */
-
-#content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#content h2 {
-  margin-bottom: 20px;
-}
-
-#content h3 {
-  margin-top: 30px;
-  margin-bottom: 8px;
-}
-
 #content p {
   max-width: 600px;
   margin: 0 auto 15px;
@@ -103,9 +83,8 @@ h3 {
 }
 
 /* =========================
-   RENTALS PAGE ALIGNMENT
+   LISTS (RENTALS PAGE)
 ========================= */
-
 #content ul {
   list-style: none;
   padding: 0;
@@ -124,39 +103,29 @@ h3 {
 }
 
 /* =========================
-   CENTERED PAGE CONTENT
-========================= */
-
-#content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#content h2 {
-  margin-bottom: 20px;
-}
-
-#content p {
-  margin-bottom: 15px;
-}
-
-/* =========================
    IMAGES
 ========================= */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto 15px;
 }
 
 .hero-image {
   border-radius: 12px;
-  margin-bottom: 10px;
 }
 
 /* =========================
-   FOOTER (TEACHER-APPROVED)
+   CONTENT VISIBILITY
+========================= */
+/* Mobile-first: desktop content hidden */
+.desktop-only {
+  display: none;
+}
+
+/* =========================
+   FOOTER
 ========================= */
 footer {
   background-color: #f5f5f5;
@@ -167,32 +136,8 @@ footer {
 }
 
 /* =========================
-   MOBILE RESPONSIVE
-========================= */
-@media (max-width: 600px) {
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #content {
-    padding: 15px;
-  }
-
-  h2, h3 {
-    text-align: center;
-  }
-}
-
-/* =========================
    MAP EMBED
 ========================= */
-.map-container {
-  margin-top: 30px;
-  width: 100%;
-}
-
 .map-container {
   width: 100%;
   max-width: 800px;
@@ -202,30 +147,61 @@ footer {
 }
 
 /* ===============================
-   TABLET VIEWPORT (481px–768px)
-   =============================== */
+   TABLET VIEWPORT (481px+)
+=============================== */
 @media screen and (min-width: 481px) {
+
   nav ul {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
+    gap: 20px;
+  }
+
+  /* Tablet/Desktop content visibility */
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
   }
 }
 
 /* ===============================
    DESKTOP VIEWPORT (769px+)
-   =============================== */
+=============================== */
 @media screen and (min-width: 769px) {
+
+  /* Desktop navigation hover (pseudo-class) */
+  nav a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  /* Desktop layout */
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
   }
+
+  /* Multi-column layout (desktop enhancement) */
+  .lessons {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  /* Desktop gradient background */
+  body {
+    background: linear-gradient(to bottom, #ffffff, #eaeaea);
+  }
 }
 
 /* ===============================
    LARGE DESKTOP VIEWPORT (1200px+)
-   =============================== */
+=============================== */
 @media screen and (min-width: 1200px) {
+
   body {
     max-width: 1200px;
     margin: 0 auto;
@@ -234,9 +210,11 @@ footer {
 
 /* ===============================
    PRINT STYLES
-   =============================== */
+=============================== */
 @media print {
-  nav, footer {
+
+  nav,
+  footer {
     display: none;
   }
 
@@ -245,11 +223,3 @@ footer {
     color: #000;
   }
 }
-
-
-
-
-
-
-
-
