@@ -78,6 +78,31 @@ h3 {
 }
 
 /* =========================
+   LESSONS PAGE ALIGNMENT
+========================= */
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content h2 {
+  margin-bottom: 20px;
+}
+
+#content h3 {
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+#content p {
+  max-width: 600px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+}
+
+/* =========================
    IMAGES
 ========================= */
 img {
@@ -120,3 +145,4 @@ footer {
     text-align: center;
   }
 }
+
