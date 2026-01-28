@@ -178,14 +178,7 @@ footer {
     text-decoration: underline;
   }
 
-  /* Desktop layout */
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-  }
-
-  /* Multi-column layout (desktop enhancement) */
+  /* Multi-column layout — LESSONS PAGE ONLY */
   .lessons {
     column-count: 2;
     column-gap: 2rem;
