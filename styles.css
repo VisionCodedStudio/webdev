@@ -201,6 +201,52 @@ footer {
   overflow: hidden;
 }
 
+/* ===============================
+   TABLET VIEWPORT (481px–768px)
+   =============================== */
+@media screen and (min-width: 481px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   DESKTOP VIEWPORT (769px+)
+   =============================== */
+@media screen and (min-width: 769px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ===============================
+   LARGE DESKTOP VIEWPORT (1200px+)
+   =============================== */
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* ===============================
+   PRINT STYLES
+   =============================== */
+@media print {
+  nav, footer {
+    display: none;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+}
+
+
 
 
 
