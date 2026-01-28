@@ -124,6 +124,16 @@ h3 {
 }
 
 /* =========================
+   CENTERED PAGE CONTENT
+========================= */
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
    IMAGES
 ========================= */
 img {
@@ -166,6 +176,7 @@ footer {
     text-align: center;
   }
 }
+
 
 
 
