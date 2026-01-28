@@ -90,12 +90,26 @@ footer {
 }
 
 /* =========================
-   MOBILE-FRIENDLY NAVIGATION
+   MOBILE LAYOUT & NAVIGATION
 ========================= */
 @media (max-width: 600px) {
+
+  body {
+    margin: 0;
+  }
+
   nav ul {
     flex-direction: column;
     align-items: center;
+    padding: 10px 0;
+  }
+
+  nav li {
+    margin: 8px 0;
+  }
+
+  #content {
+    padding: 0 15px;
   }
 }
 
