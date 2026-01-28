@@ -103,6 +103,22 @@ h3 {
 }
 
 /* =========================
+   RENTALS PAGE ALIGNMENT
+========================= */
+
+#content ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px auto;
+  max-width: 600px;
+}
+
+#content ul li {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+/* =========================
    IMAGES
 ========================= */
 img {
@@ -145,4 +161,5 @@ footer {
     text-align: center;
   }
 }
+
 
