@@ -125,6 +125,14 @@ img {
 }
 
 /* =========================
+   LESSONS PAGE STYLES
+========================= */
+.lesson-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
    FOOTER
 ========================= */
 footer {
@@ -216,3 +224,4 @@ footer {
     color: #000;
   }
 }
+
