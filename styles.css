@@ -8,13 +8,20 @@
 }
 
 /* =========================
-   BASE STYLES
+   BASE LAYOUT (FOOTER FIX)
 ========================= */
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* =========================
@@ -60,6 +67,7 @@ nav a:hover {
 ========================= */
 main {
   padding: 20px;
+  flex: 1; /* pushes footer to bottom */
 }
 
 #content {
@@ -78,14 +86,13 @@ img {
 }
 
 /* =========================
-   FOOTER
+   FOOTER (BOTTOM OF PAGE)
 ========================= */
 footer {
   background-color: #222;
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
 }
 
 footer a {
