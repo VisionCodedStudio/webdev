@@ -1,18 +1,93 @@
+/* =========================
+   CSS RESET (Lesson 4)
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BASE STYLES
+========================= */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =========================
+   NAVIGATION (UL REQUIRED)
+========================= */
+nav {
+  background-color: #444;
+  padding: 10px;
 }
 
 nav ul {
   list-style-type: none;
+  text-align: center;
 }
 
 nav li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+  padding: 20px;
+}
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* =========================
+   RESPONSIVE IMAGE (Lesson 4)
+========================= */
 img {
-  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
 
+footer a {
+  color: #9fd3ff;
+}
