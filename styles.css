@@ -1,7 +1,7 @@
 /* =========================
-   CSS RESET (Chapter 4)
+   CSS RESET (TEXTBOOK)
    ========================= */
-body, header, nav, main, footer, ul, li, h1, h2, p {
+body, header, nav, main, footer, ul, li, h1, h2, p, img {
   margin: 0;
   padding: 0;
 }
@@ -16,24 +16,25 @@ body {
 }
 
 /* =========================
-   HEADER (TEXTBOOK PURPLE)
+   HEADER (WHITE BACKGROUND)
    ========================= */
 header {
-  background-color: #4b3f92; /* PURPLE from textbook */
-  color: #ffffff;
+  background-color: #ffffff;
   text-align: center;
   padding: 20px 0;
 }
 
 header h1 {
-  font-size: 2em;
+  color: #3f3c8d; /* textbook purple */
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 /* =========================
-   NAVIGATION (MATCH HEADER)
+   NAVIGATION (PURPLE BAR)
    ========================= */
 nav {
-  background-color: #4b3f92;
+  background-color: #3f3c8d; /* textbook purple */
 }
 
 nav ul {
@@ -47,17 +48,33 @@ nav li {
 
 nav a {
   display: block;
-  padding: 10px 15px;
+  padding: 12px 18px;
   color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-  background-color: #372f6b;
+  background-color: #2f2c70;
 }
 
 /* =========================
-   MAIN CONTENT
+   BANNER IMAGE AREA
+   (MUSIC NOTES IMAGE GOES HERE)
+   ========================= */
+.banner {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   MAIN CONTENT AREA
    ========================= */
 main {
   max-width: 1000px;
@@ -86,22 +103,15 @@ p {
 }
 
 /* =========================
-   IMAGE (RESPONSIVE)
-   ========================= */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 15px auto;
-}
-
-/* =========================
    FOOTER (LIGHT GRAY)
    ========================= */
 footer {
   background-color: #eeeeee;
-  color: #000000;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+}
+
+footer p {
+  color: #000000;
 }
