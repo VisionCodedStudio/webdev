@@ -1,53 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Fundamentals Assignment</title>
+/* 
+  External CSS File
+  Demonstrates selectors, properties, values,
+  box model, floats, classes, IDs, and comments
+*/
 
-  <!-- Embedded CSS (demonstrates embedded styles) -->
-  <style>
-    h2 {
-      color: darkgreen;
-    }
-  </style>
+/* ID selector */
+#main-title {
+  text-align: center;
+  color: navy;
+}
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css">
-</head>
+/* Class selector for span */
+.highlight {
+  color: orange;
+  font-weight: bold;
+}
 
-<body>
+/* Box model demonstration */
+.box {
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid black;
+  background-color: #f0f0f0;
+}
 
-  <h1 id="main-title">CSS Fundamentals Demo</h1>
+/* Float examples */
+.left-box {
+  float: left;
+}
 
-  <h2>Separating Content from Design</h2>
+.right-box {
+  float: right;
+}
 
-  <p>
-    This page demonstrates CSS concepts required for this chapter.
-    <span class="highlight">This text uses a span element.</span>
-  </p>
+/* Clear floats */
+.clear-box {
+  clear: both;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #ddd;
+}
 
-  <!-- Inline style example -->
-  <p style="color: red;">
-    This paragraph uses an inline style.
-  </p>
-
-  <!-- Float examples -->
-  <div class="box left-box">
-    Left Floated Box
-  </div>
-
-  <div class="box right-box">
-    Right Floated Box
-  </div>
-
-  <!-- Clear float -->
-  <div class="clear-box">
-    This section clears the floated elements.
-  </div>
-
-  <!-- Responsive image -->
-  <img src="https://via.placeholder.com/600x300" alt="Responsive example image">
-
-</body>
-</html>
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
