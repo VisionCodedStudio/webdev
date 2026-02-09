@@ -11,6 +11,16 @@ body, header, nav, main, footer, img, h1 {
   border: 0;
 }
 
+/* Page layout fix (keeps footer at bottom) */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Style rule for images */
 img {
   max-width: 100%;
@@ -52,12 +62,20 @@ nav li a {
   text-decoration: none;
 }
 
+/* Hero Image */
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Style rules for main content */
 main {
   padding: 2%;
   background-color: #e5e5e5;
   overflow: auto;
   font-family: Verdana, Arial, sans-serif;
+  flex: 1;
 }
 
 main p {
@@ -103,11 +121,7 @@ footer {
   clear: left;
 }
 
-/* Footer stays visually at bottom */
-html, body {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
+footer a {
+  color: #4645a8;
+  text-decoration: none;
 }
