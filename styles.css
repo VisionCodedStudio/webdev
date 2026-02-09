@@ -1,23 +1,23 @@
-/* =========================
-   CSS RESET (TEXTBOOK)
-   ========================= */
-body, header, nav, main, footer, ul, li, h1, h2, p, img {
+/*
+Author: Amir Bennett
+Date: 02/09/2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1 {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
-/* =========================
-   BODY
-   ========================= */
+/* Body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
-  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* =========================
-   HEADER (WHITE BACKGROUND)
-   ========================= */
+/* Header */
 header {
   background-color: #ffffff;
   text-align: center;
@@ -25,16 +25,14 @@ header {
 }
 
 header h1 {
-  color: #3f3c8d; /* textbook purple */
+  color: #3f3c8d;
   font-size: 2.2em;
   font-weight: bold;
 }
 
-/* =========================
-   NAVIGATION (PURPLE BAR)
-   ========================= */
+/* Navigation */
 nav {
-  background-color: #3f3c8d; /* textbook purple */
+  background-color: #3f3c8d;
 }
 
 nav ul {
@@ -58,59 +56,41 @@ nav a:hover {
   background-color: #2f2c70;
 }
 
-/* =========================
-   BANNER IMAGE AREA
-   ========================= */
-.banner {
-  background-color: #ffffff;
-  text-align: center;
-}
-
+/* Banner Image */
 .banner img {
   width: 100%;
-  max-width: 1000px;
   height: auto;
   display: block;
-  margin: 0 auto;
 }
 
-/* =========================
-   MAIN CONTENT AREA
-   ========================= */
+/* Main Content */
 main {
   max-width: 1000px;
   margin: 20px auto;
 }
 
-/* =========================
-   CONTENT BOX (BOX MODEL)
-   ========================= */
 #content {
   background-color: #ffffff;
   padding: 20px;
   border: 1px solid #cccccc;
 }
 
-/* =========================
-   HEADINGS & TEXT
-   ========================= */
+/* Headings */
 h2 {
   margin-bottom: 15px;
 }
 
+/* Paragraphs */
 p {
   margin-bottom: 12px;
   line-height: 1.5;
 }
 
-/* =========================
-   FOOTER (LIGHT GRAY)
-   ========================= */
+/* Footer */
 footer {
   background-color: #eeeeee;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
 }
 
 footer p {
