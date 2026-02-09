@@ -103,7 +103,11 @@ footer {
   clear: left;
 }
 
-footer a {
-  color: #4645a8;
-  text-decoration: none;
+/* Footer stays visually at bottom */
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
