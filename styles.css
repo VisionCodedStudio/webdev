@@ -1,15 +1,22 @@
 /* =========================
    CSS RESET (Chapter 4 OK)
    ========================= */
-body, header, nav, main, footer, ul, li, h1, h2, p {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* =========================
-   BODY
+   PAGE STRUCTURE (FIX FOOTER)
    ========================= */
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #000;
@@ -57,10 +64,11 @@ nav a:hover {
 }
 
 /* =========================
-   MAIN CONTENT AREA
+   MAIN (THIS PUSHES FOOTER)
    ========================= */
 main {
-  max-width: 1000px;      /* FIXES YOUR SIZING ISSUE */
+  flex: 1;
+  max-width: 1000px;
   margin: 20px auto;
 }
 
@@ -96,14 +104,13 @@ p {
 }
 
 /* =========================
-   FOOTER
+   FOOTER (STAYS AT BOTTOM)
    ========================= */
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
   padding: 15px 0;
-  margin-top: 30px;
 }
 
 footer a {
