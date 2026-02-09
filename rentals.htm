@@ -1,124 +1,52 @@
-/*
-Author: Amir Bennett
-Date: 2026-02-09
-File Name: styles.css
-*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strike a Chord | Rentals</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-/* =========================
-   CSS RESET
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<body>
 
-/* =========================
-   PAGE LAYOUT (FIX FOOTER)
-========================= */
-html, body {
-  height: 100%;
-}
+<header>
+  <h1>🎵 Strike a Chord 🎵</h1>
+</header>
 
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: Verdana, Arial, sans-serif;
-}
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="instructors.html">Instructors</a></li>
+    <li><a href="rentals.html">Rentals</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-/* =========================
-   HEADER
-========================= */
-header {
-  text-align: center;
-  color: #373684;
-  padding: 1rem 0;
-}
+<main>
+  <section>
+    <h2>Instrument Rentals</h2>
 
-header h1 {
-  font-size: 2.25rem;   /* NORMAL SIZE */
-  font-style: italic;
-}
+    <p>
+      Strike a Chord offers a wide selection of instruments available for short-term
+      and long-term rental.
+    </p>
 
-/* =========================
-   NAVIGATION
-========================= */
-nav {
-  background-color: #373684;
-}
+    <p>
+      Rentals are perfect for beginners who want to try an instrument before
+      committing to a purchase.
+    </p>
+  </section>
+</main>
 
-nav ul {
-  list-style-type: none;
-  text-align: center;
-}
+<footer>
+  <p>© 2026 Strike a Chord</p>
+  <p>
+    Email:
+    <a href="mailto:abennett1385@student.gwinnetttech.edu">
+      abennett1385@student.gwinnetttech.edu
+    </a>
+  </p>
+</footer>
 
-nav li {
-  display: inline-block;
-}
-
-nav li a {
-  display: block;
-  padding: 0.75rem 1.25rem;
-  font-size: 1rem;     /* NORMAL SIZE */
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav li a:hover {
-  background-color: #2f2c70;
-}
-
-/* =========================
-   HERO IMAGE
-========================= */
-#hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* =========================
-   MAIN CONTENT
-========================= */
-main {
-  flex: 1; /* 🔑 THIS PUSHES FOOTER DOWN */
-  background-color: #e5e5e5;
-  padding: 2rem;
-}
-
-main h2 {
-  margin-bottom: 0.75rem;
-}
-
-main p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.action {
-  font-weight: bold;
-  color: #373684;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  font-size: 0.75rem;
-  padding: 1rem 0;
-  background-color: #ffffff;
-}
-
-footer a {
-  color: #4645a8;
-  text-decoration: none;
-}
-
-/* =========================
-   MAP (CONTACT PAGE)
-========================= */
-.map {
-  border: 5px solid #373684;
-}
+</body>
+</html>
