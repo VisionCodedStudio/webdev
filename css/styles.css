@@ -52,24 +52,6 @@ nav li a {
   text-decoration: none;
 }
 
-nav a {
-  display: block;
-  padding: 12px 18px;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  background-color: #2f2c70;
-}
-
-/* Banner Image */
-.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 /* Style rules for main content */
 main {
   padding: 2%;
