@@ -4,52 +4,35 @@ Date: 2026-02-09
 File Name: styles.css
 */
 
-/* =========================
-   CSS RESET
-========================= */
-body, header, nav, main, footer, img, h1, h2, p, ul, li {
+/* CSS Reset */
+body, header, nav, main, footer, img, h1 {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* =========================
-   PAGE LAYOUT (FOOTER FIX)
-========================= */
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: Verdana, Arial, sans-serif;
-}
-
-/* =========================
-   IMAGES
-========================= */
+/* Style rule for images */
 img {
   max-width: 100%;
   display: block;
 }
 
 /* =========================
-   HEADER
+   Header Styles
 ========================= */
 header {
   text-align: center;
-  font-size: 2em; /* FIXED: was 3em */
   color: #373684;
-  padding: 0.75em 0;
+  padding: 1em 0;
 }
 
 header h1 {
+  font-size: 2.5em;   /* ✅ FIXED SIZE */
   font-style: italic;
 }
 
 /* =========================
-   NAVIGATION
+   Navigation Styles
 ========================= */
 nav {
   background-color: #373684;
@@ -61,25 +44,24 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
-  font-size: 1.25em; /* FIXED: was 2em */
+  display: inline-block; /* ✅ keeps nav horizontal */
 }
 
-nav li a,
-nav li {
+nav li a {
   display: block;
-  padding: 0.6em 1em;
+  padding: 0.5em 1em;
+  font-size: 1.25em;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
+nav li a:hover {
   background-color: #2f2c70;
 }
 
 /* =========================
-   HERO IMAGE
+   Hero Image
 ========================= */
 #hero img {
   width: 100%;
@@ -87,20 +69,19 @@ nav a:hover {
 }
 
 /* =========================
-   MAIN CONTENT
+   Main Content
 ========================= */
 main {
-  flex: 1; /* pushes footer to bottom */
   padding: 2%;
   background-color: #e5e5e5;
+  overflow: auto;
+  font-family: Verdana, Arial, sans-serif;
 }
 
 main p {
   font-size: 1.1em;
-  margin-top: 0.75em;
 }
 
-/* ACTION TEXT (FREE) */
 .action {
   font-size: 1.4em;
   color: #373684;
@@ -108,51 +89,23 @@ main p {
 }
 
 /* =========================
-   FLOAT SECTIONS (LESSONS PAGE)
-========================= */
-#lessons,
-#instructors,
-#rentals {
-  width: 29%;
-  float: left;
-  margin: 0 2%;
-}
-
-#info {
-  clear: left;
-  background-color: #c0caf7;
-  padding: 1% 2%;
-  margin-top: 1em;
-}
-
-/* =========================
-   CONTACT PAGE
-========================= */
-#contact {
-  text-align: center;
-}
-
-#contact a {
-  color: #4645a8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.map {
-  border: 5px solid #373684;
-}
-
-/* =========================
-   FOOTER (BOTTOM FIXED)
+   Footer Styles
 ========================= */
 footer {
   text-align: center;
-  font-size: 0.75em; /* FIXED: readable, not tiny */
+  font-size: 0.65em;
   padding: 1em 0;
-  background-color: #ffffff;
+  clear: both;
 }
 
 footer a {
   color: #4645a8;
   text-decoration: none;
+}
+
+/* =========================
+   Map (Contact Page)
+========================= */
+.map {
+  border: 5px solid #373684;
 }
