@@ -70,37 +70,58 @@ nav a:hover {
   height: auto;
   display: block;
 }
-
-/* Main Content */
+/* Style rules for main content */
 main {
-  max-width: 1000px;
-  margin: 20px auto;
+  padding: 2%;
+  background-color: #e5e5e5;
+  overflow: auto;
+  font-family: Verdana, Arial, sans-serif;
 }
 
-#content {
-  background-color: #ffffff;
-  padding: 20px;
-  border: 1px solid #cccccc;
+main p {
+  font-size: 1.25em;
 }
 
-/* Headings */
-h2 {
-  margin-bottom: 15px;
+.action {
+  font-size: 1.75em;
+  color: #373684;
+  font-weight: bold;
 }
 
-/* Paragraphs */
-p {
-  margin-bottom: 12px;
-  line-height: 1.5;
+#lessons, #instructors, #rentals {
+  width: 29%;
+  float: left;
+  margin: 0 2%;
 }
 
-/* Footer */
-footer {
-  background-color: #eeeeee;
+#info {
+  clear: left;
+  background-color: #c0caf7;
+  padding: 1% 2%;
+}
+
+#contact {
   text-align: center;
-  padding: 15px;
 }
 
-footer p {
-  color: #000000;
+#contact a {
+  color: #4645a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.map {
+  border: 5px solid #373684;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.65em;
+  clear: left;
+}
+
+footer a {
+  color: #4645a8;
+  text-decoration: none;
 }
