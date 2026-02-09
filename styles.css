@@ -1,100 +1,53 @@
-/* =========================
-   CSS RESET (Lesson 4)
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Fundamentals Assignment</title>
 
-/* =========================
-   BASE LAYOUT (FOOTER FIX)
-========================= */
-html, body {
-  height: 100%;
-}
+  <!-- Embedded CSS (demonstrates embedded styles) -->
+  <style>
+    h2 {
+      color: darkgreen;
+    }
+  </style>
 
-body {
-  font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  display: flex;
-  flex-direction: column;
-}
+<body>
 
-/* =========================
-   HEADER
-========================= */
-header {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+  <h1 id="main-title">CSS Fundamentals Demo</h1>
 
-/* =========================
-   NAVIGATION (UL REQUIRED)
-========================= */
-nav {
-  background-color: #444;
-  padding: 10px;
-}
+  <h2>Separating Content from Design</h2>
 
-nav ul {
-  list-style-type: none;
-  text-align: center;
-}
+  <p>
+    This page demonstrates CSS concepts required for this chapter.
+    <span class="highlight">This text uses a span element.</span>
+  </p>
 
-nav li {
-  display: inline;
-  margin-right: 15px;
-}
+  <!-- Inline style example -->
+  <p style="color: red;">
+    This paragraph uses an inline style.
+  </p>
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+  <!-- Float examples -->
+  <div class="box left-box">
+    Left Floated Box
+  </div>
 
-nav a:hover {
-  text-decoration: underline;
-}
+  <div class="box right-box">
+    Right Floated Box
+  </div>
 
-/* =========================
-   MAIN CONTENT
-========================= */
-main {
-  padding: 20px;
-  flex: 1; /* pushes footer to bottom */
-}
+  <!-- Clear float -->
+  <div class="clear-box">
+    This section clears the floated elements.
+  </div>
 
-#content {
-  max-width: 800px;
-  margin: 0 auto;
-}
+  <!-- Responsive image -->
+  <img src="https://via.placeholder.com/600x300" alt="Responsive example image">
 
-/* =========================
-   RESPONSIVE IMAGE (Lesson 4)
-========================= */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
-/* =========================
-   FOOTER (BOTTOM OF PAGE)
-========================= */
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
-footer a {
-  color: #9fd3ff;
-}
+</body>
+</html>
