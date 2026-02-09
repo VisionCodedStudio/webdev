@@ -14,17 +14,16 @@ File Name: styles.css
 }
 
 /* =========================
-   PAGE LAYOUT (KEY FIX)
+   PAGE LAYOUT (FIX FOOTER)
 ========================= */
 html, body {
   height: 100%;
 }
 
-body.page {
+body {
   display: flex;
   flex-direction: column;
   font-family: Verdana, Arial, sans-serif;
-  font-size: 16px;
 }
 
 /* =========================
@@ -33,11 +32,11 @@ body.page {
 header {
   text-align: center;
   color: #373684;
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 header h1 {
-  font-size: 2.2em;
+  font-size: 2.25rem;   /* NORMAL SIZE */
   font-style: italic;
 }
 
@@ -59,8 +58,8 @@ nav li {
 
 nav li a {
   display: block;
-  padding: 0.5em 1em;
-  font-size: 1.2em;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;     /* NORMAL SIZE */
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
@@ -75,26 +74,26 @@ nav li a:hover {
 ========================= */
 #hero img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
 /* =========================
    MAIN CONTENT
 ========================= */
-main.content {
-  flex: 1; /* ⭐ THIS PUSHES FOOTER DOWN */
+main {
+  flex: 1; /* 🔑 THIS PUSHES FOOTER DOWN */
   background-color: #e5e5e5;
-  padding: 2%;
+  padding: 2rem;
 }
 
 main h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75rem;
 }
 
 main p {
-  font-size: 1em;
-  margin-bottom: 1em;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .action {
@@ -107,8 +106,9 @@ main p {
 ========================= */
 footer {
   text-align: center;
-  font-size: 0.65em;
-  padding: 1em 0;
+  font-size: 0.75rem;
+  padding: 1rem 0;
+  background-color: #ffffff;
 }
 
 footer a {
@@ -117,7 +117,7 @@ footer a {
 }
 
 /* =========================
-   MAP (CONTACT)
+   MAP (CONTACT PAGE)
 ========================= */
 .map {
   border: 5px solid #373684;
