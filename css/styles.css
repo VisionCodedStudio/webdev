@@ -4,14 +4,18 @@ Date: 2026-02-09
 File Name: styles.css
 */
 
-/* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+/* =========================
+   CSS RESET
+========================= */
+body, header, nav, main, footer, img, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* Page layout fix (keeps footer at bottom) */
+/* =========================
+   PAGE LAYOUT (FOOTER FIX)
+========================= */
 html, body {
   height: 100%;
 }
@@ -19,76 +23,96 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: Verdana, Arial, sans-serif;
 }
 
-/* Style rule for images */
+/* =========================
+   IMAGES
+========================= */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Style rules for header content */
+/* =========================
+   HEADER
+========================= */
 header {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em; /* FIXED: was 3em */
   color: #373684;
+  padding: 0.75em 0;
 }
 
 header h1 {
   font-style: italic;
 }
 
-/* Style rules for navigation area */
+/* =========================
+   NAVIGATION
+========================= */
 nav {
   background-color: #373684;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
   text-align: center;
 }
 
 nav li {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.25em; /* FIXED: was 2em */
 }
 
-nav li a {
+nav li a,
+nav li {
   display: block;
+  padding: 0.6em 1em;
   color: #ffffff;
-  text-align: center;
-  padding: 0.5em 1em;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* Hero Image */
+nav a:hover {
+  background-color: #2f2c70;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
 #hero img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
-/* Style rules for main content */
+/* =========================
+   MAIN CONTENT
+========================= */
 main {
+  flex: 1; /* pushes footer to bottom */
   padding: 2%;
   background-color: #e5e5e5;
-  overflow: auto;
-  font-family: Verdana, Arial, sans-serif;
-  flex: 1;
 }
 
 main p {
-  font-size: 1.25em;
+  font-size: 1.1em;
+  margin-top: 0.75em;
 }
 
+/* ACTION TEXT (FREE) */
 .action {
-  font-size: 1.75em;
+  font-size: 1.4em;
   color: #373684;
   font-weight: bold;
 }
 
-#lessons, #instructors, #rentals {
+/* =========================
+   FLOAT SECTIONS (LESSONS PAGE)
+========================= */
+#lessons,
+#instructors,
+#rentals {
   width: 29%;
   float: left;
   margin: 0 2%;
@@ -98,8 +122,12 @@ main p {
   clear: left;
   background-color: #c0caf7;
   padding: 1% 2%;
+  margin-top: 1em;
 }
 
+/* =========================
+   CONTACT PAGE
+========================= */
 #contact {
   text-align: center;
 }
@@ -114,11 +142,14 @@ main p {
   border: 5px solid #373684;
 }
 
-/* Style rules for footer content */
+/* =========================
+   FOOTER (BOTTOM FIXED)
+========================= */
 footer {
   text-align: center;
-  font-size: 0.65em;
-  clear: left;
+  font-size: 0.75em; /* FIXED: readable, not tiny */
+  padding: 1em 0;
+  background-color: #ffffff;
 }
 
 footer a {
