@@ -3,14 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Fundamentals Assignment</title>
-
-  <!-- Embedded CSS (demonstrates embedded styles) -->
-  <style>
-    h2 {
-      color: darkgreen;
-    }
-  </style>
+  <title>Strike a Chord</title>
 
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
@@ -18,36 +11,48 @@
 
 <body>
 
-  <h1 id="main-title">CSS Fundamentals Demo</h1>
+<header>
+  <h1>🎵 Strike a Chord 🎵</h1>
+</header>
 
-  <h2>Separating Content from Design</h2>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Lessons</a></li>
+    <li><a href="#">Instructors</a></li>
+    <li><a href="#">Rentals</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
+<main>
+  <section id="content">
+
+    <h2>Welcome to Strike a Chord</h2>
+
+    <img src="image/music.png" alt="Musical instruments used for lessons" class="hero-image">
+
+    <p>
+      Strike a Chord is a local music store specializing in music lessons and rental equipment.
+    </p>
+
+    <p>
+      We offer music lessons for all skill levels and ages.
+    </p>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Strike a Chord</p>
   <p>
-    This page demonstrates CSS concepts required for this chapter.
-    <span class="highlight">This text uses a span element.</span>
+    Email:
+    <a href="mailto:abennet1385@student.gwinnetttech.edu">
+      abennet1385@student.gwinnetttech.edu
+    </a>
   </p>
-
-  <!-- Inline style example -->
-  <p style="color: red;">
-    This paragraph uses an inline style.
-  </p>
-
-  <!-- Float examples -->
-  <div class="box left-box">
-    Left Floated Box
-  </div>
-
-  <div class="box right-box">
-    Right Floated Box
-  </div>
-
-  <!-- Clear float -->
-  <div class="clear-box">
-    This section clears the floated elements.
-  </div>
-
-  <!-- Responsive image -->
-  <img src="https://via.placeholder.com/600x300" alt="Responsive example image">
+</footer>
 
 </body>
 </html>
