@@ -4,21 +4,31 @@ Date: 2026-02-09
 File Name: styles.css
 */
 
-/* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+/* =========================
+   CSS RESET
+========================= */
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-}
-
-/* Style rule for images */
-img {
-  max-width: 100%;
-  display: block;
+  box-sizing: border-box;
 }
 
 /* =========================
-   Header Styles
+   PAGE LAYOUT (KEY FIX)
+========================= */
+html, body {
+  height: 100%;
+}
+
+body.page {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* =========================
+   HEADER
 ========================= */
 header {
   text-align: center;
@@ -27,12 +37,12 @@ header {
 }
 
 header h1 {
-  font-size: 2.5em;   /* ✅ FIXED SIZE */
+  font-size: 2.2em;
   font-style: italic;
 }
 
 /* =========================
-   Navigation Styles
+   NAVIGATION
 ========================= */
 nav {
   background-color: #373684;
@@ -44,13 +54,13 @@ nav ul {
 }
 
 nav li {
-  display: inline-block; /* ✅ keeps nav horizontal */
+  display: inline-block;
 }
 
 nav li a {
   display: block;
   padding: 0.5em 1em;
-  font-size: 1.25em;
+  font-size: 1.2em;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
@@ -61,41 +71,44 @@ nav li a:hover {
 }
 
 /* =========================
-   Hero Image
+   HERO IMAGE
 ========================= */
 #hero img {
   width: 100%;
-  height: auto;
+  display: block;
 }
 
 /* =========================
-   Main Content
+   MAIN CONTENT
 ========================= */
-main {
-  padding: 2%;
+main.content {
+  flex: 1; /* ⭐ THIS PUSHES FOOTER DOWN */
   background-color: #e5e5e5;
-  overflow: auto;
-  font-family: Verdana, Arial, sans-serif;
+  padding: 2%;
+}
+
+main h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 main p {
-  font-size: 1.1em;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 .action {
-  font-size: 1.4em;
-  color: #373684;
   font-weight: bold;
+  color: #373684;
 }
 
 /* =========================
-   Footer Styles
+   FOOTER
 ========================= */
 footer {
   text-align: center;
   font-size: 0.65em;
   padding: 1em 0;
-  clear: both;
 }
 
 footer a {
@@ -104,7 +117,7 @@ footer a {
 }
 
 /* =========================
-   Map (Contact Page)
+   MAP (CONTACT)
 ========================= */
 .map {
   border: 5px solid #373684;
