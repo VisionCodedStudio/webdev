@@ -122,3 +122,40 @@ footer a {
 .map {
   border: 5px solid #373684;
 }
+
+/* =========================
+   MOBILE STYLES (WEEK 5)
+   Purpose: Improve readability and navigation on mobile devices
+========================= */
+@media (max-width: 768px) {
+
+  /* Stack navigation links vertically for easier tapping */
+  nav li {
+    display: block;
+  }
+
+  nav li a {
+    padding: 1rem;
+  }
+
+  /* Reduce padding so content fits better on smaller screens */
+  main {
+    padding: 1.25rem;
+  }
+
+}
+
+/* =========================
+   ROUNDED CORNERS
+   Purpose: Visual enhancement per rubric requirements
+========================= */
+
+/* Rounded corners for main content area */
+main {
+  border-radius: 10px;
+}
+
+/* Rounded corners for map element on contact page */
+.map {
+  border-radius: 12px;
+}
