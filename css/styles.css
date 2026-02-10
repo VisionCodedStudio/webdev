@@ -135,7 +135,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  height: 190px;
+  min-height: 190px; /* changed from height to prevent oversized header */
 }
 
 /* Style rules for navigation area */
