@@ -36,7 +36,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.25rem;   /* NORMAL SIZE */
+  font-size: 2.25rem;
   font-style: italic;
 }
 
@@ -59,7 +59,7 @@ nav li {
 nav li a {
   display: block;
   padding: 0.75rem 1.25rem;
-  font-size: 1rem;     /* NORMAL SIZE */
+  font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
@@ -82,9 +82,10 @@ nav li a:hover {
    MAIN CONTENT
 ========================= */
 main {
-  flex: 1; /* 🔑 THIS PUSHES FOOTER DOWN */
+  flex: 1;
   background-color: #e5e5e5;
   padding: 2rem;
+  border-radius: 10px; /* Rounded corner enhancement */
 }
 
 main h2 {
@@ -121,41 +122,34 @@ footer a {
 ========================= */
 .map {
   border: 5px solid #373684;
-}
-
-/* =========================
-   MOBILE STYLES (WEEK 5)
-   Purpose: Improve readability and navigation on mobile devices
-========================= */
-@media (max-width: 768px) {
-
-  /* Stack navigation links vertically for easier tapping */
-  nav li {
-    display: block;
-  }
-
-  nav li a {
-    padding: 1rem;
-  }
-
-  /* Reduce padding so content fits better on smaller screens */
-  main {
-    padding: 1.25rem;
-  }
-
-}
-
-/* =========================
-   ROUNDED CORNERS
-   Purpose: Visual enhancement per rubric requirements
-========================= */
-
-/* Rounded corners for main content area */
-main {
-  border-radius: 10px;
-}
-
-/* Rounded corners for map element on contact page */
-.map {
   border-radius: 12px;
+}
+
+/* ======================================
+   style rules for mobile viewport
+====================================== */
+
+/* Style rules for header */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  height: 190px;
+}
+
+/* Style rules for navigation area */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+/* Stack navigation links vertically for mobile */
+nav li {
+  display: block;
+}
+
+/* Adjust content spacing for smaller screens */
+main {
+  padding: 1.25rem;
 }
