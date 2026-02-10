@@ -85,7 +85,7 @@ main {
   flex: 1;
   background-color: #e5e5e5;
   padding: 2rem;
-  border-radius: 10px; /* Rounded corner enhancement */
+  border-radius: 10px;
 }
 
 main h2 {
@@ -128,28 +128,31 @@ footer a {
 /* ======================================
    style rules for mobile viewport
 ====================================== */
+@media (max-width: 768px) {
 
-/* Style rules for header */
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  min-height: 190px; /* changed from height to prevent oversized header */
-}
+  /* Style rules for header */
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    min-height: 190px;
+  }
 
-/* Style rules for navigation area */
-nav {
-  padding: 1%;
-  margin-bottom: 1%;
-}
+  /* Style rules for navigation area */
+  nav {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
 
-/* Stack navigation links vertically for mobile */
-nav li {
-  display: block;
-}
+  /* Stack navigation links vertically for mobile */
+  nav li {
+    display: block;
+  }
 
-/* Adjust content spacing for smaller screens */
-main {
-  padding: 1.25rem;
+  /* Adjust content spacing for smaller screens */
+  main {
+    padding: 1.25rem;
+  }
+
 }
