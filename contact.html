@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Mobile viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Strike a Chord | Contact</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <header>
-  <h1>🎵 Strike a Chord 🎵</h1>
+  <h1>
+    <span class="tab-desk">&#9836;</span>
+    Strike a Chord
+    <span class="tab-desk">&#9836;</span>
+  </h1>
 </header>
 
 <nav>
@@ -22,40 +34,38 @@
   </ul>
 </nav>
 
+<!-- Hero Image -->
+<div id="hero" class="tab-desk">
+  <img src="image/music-notes.png" alt="Colorful music notes">
+</div>
+
 <main>
 
-  <!-- CONTACT SECTION -->
   <section id="contact">
     <h2>Ready to get started? Contact us today.</h2>
 
-    <!-- PHONE NUMBER (TEL LINK + CLASS) -->
-    <h4 class="tel-link">
-      <a href="tel:7705551234">(770) 555-1234</a>
-    </h4>
+    <p class="tel-link">
+      <a href="tel:+17705551234">(770) 555-1234</a>
+    </p>
 
-    <!-- EMAIL LINK WITH REQUIRED CLASS -->
-    <h4>
-      Email us:
-      <a class="contact-email-link"
+    <p>
+      <a class="email-link"
          href="mailto:abennett1385@student.gwinnetttech.edu">
         abennett1385@student.gwinnetttech.edu
       </a>
-    </h4>
+    </p>
   </section>
 
-  <!-- LOCATION SECTION -->
   <section id="info">
     <h2>Our Location</h2>
 
-    <!-- GOOGLE MAP (REGULAR SIZE) -->
     <iframe
       class="map"
       src="https://www.google.com/maps?q=Gwinnett%20Technical%20College&output=embed"
-      width="600"
-      height="450"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+
   </section>
 
 </main>
@@ -65,9 +75,8 @@
   <p>Call us: <a href="tel:+17705551234">(770) 555-1234</a></p>
   <p>© 2026 Strike a Chord</p>
 </footer>
-  
+
 </body>
 </html>
-
 
 
