@@ -130,6 +130,10 @@ main p {
 /* =========================
    CONTACT STYLES
 ========================= */
+#contact p {
+  text-align: center;
+}
+
 .tel-link {
   background-color: #373684;
   padding: 2%;
