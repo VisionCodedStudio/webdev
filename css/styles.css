@@ -219,6 +219,11 @@ figcaption {
 #contact {
     text-align: center;
 }
+
+#contact .map {
+    display: block;
+    margin: 0 auto;
+}
 /* =========================
    FOOTER
 ========================= */
