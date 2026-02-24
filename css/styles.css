@@ -18,6 +18,17 @@ ul {
 }
 
 /* =========================
+   WEEK 7 SEMANTIC ELEMENT RESET
+========================= */
+section,
+aside,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
    PAGE LAYOUT
 ========================= */
 html, body {
@@ -114,6 +125,44 @@ main p {
 }
 
 /* =========================
+   INSTRUCTORS - MOBILE STYLES
+========================= */
+
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #373684;
+  text-shadow: 3px 3px 10px #8280cb;
+  margin-bottom: 1rem;
+}
+
+figure {
+  position: relative;
+  max-width: 275px;
+  margin: 2% auto;
+  border: 8px solid #373684;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(55, 54, 132, 0.7);
+  color: #fff;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* =========================
    INFO SECTION
 ========================= */
 #info ul {
@@ -186,7 +235,6 @@ footer a {
 
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Show tab-desk class, hide mobile class */
     .tab-desk {
         display: block;
     }
@@ -195,12 +243,10 @@ footer a {
         display: none;
     }
 
-    /* Tablet Viewport: Style rule for header content */
     span.tab-desk {
         display: inline;
     }
 
-    /* Tablet Viewport: Style rules for nav area */
     nav li {
         border-top: none;
         display: inline-block;
@@ -216,14 +262,23 @@ footer a {
         padding: 0.25em 0.5em;
     }
 
-    /* Tablet Viewport: Style rule for map */
     .map {
         width: 500px;
         height: 450px;
     }
 
-}
+    /* WEEK 7 TABLET GRID */
 
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+}
 
 /* ============================= */
 /* Media Query for Desktop Viewport */
@@ -231,12 +286,10 @@ footer a {
 
 @media screen and (min-width: 769px), print {
 
-    /* Desktop Viewport: Style rule for header */
     header {
         padding: 2%;
     }
 
-    /* Desktop Viewport: Style rules for nav area */
     nav li a {
         padding: 0.5em 1.5em;
     }
@@ -245,8 +298,6 @@ footer a {
         color: #373684;
         background-color: #e5e9fc;
     }
-
-    /* Desktop Viewport: Style rules for main content */
 
     #info ul {
         margin-left: 5%;
@@ -264,8 +315,20 @@ footer a {
         margin: 0 2%;
     }
 
-}
+    /* WEEK 7 DESKTOP GRID */
 
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+}
 
 /* ============================= */
 /* Media Query for Print */
