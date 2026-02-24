@@ -215,6 +215,10 @@ figcaption {
   display: block;
   margin: 0 auto;
 }
+
+#contact {
+    text-align: center;
+}
 /* =========================
    FOOTER
 ========================= */
