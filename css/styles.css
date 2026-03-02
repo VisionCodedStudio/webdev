@@ -206,28 +206,16 @@ figcaption {
 }
 
 /* =========================
-   MAP
+   MAP  (UPDATED ONLY HERE)
 ========================= */
 .map {
   border: 5px solid #373684;
   border-radius: 12px;
-  width: 95%;
-  height: 50%;
+  width: 90%;
+  height: 350px;        /* Changed from percentage to fixed horizontal height */
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 5%;    /* Added more spacing below map */
 }
-
-/* ===== ADDED CONTACT SPACING FIX ===== */
-
-#contact h2 {
-  margin-top: 2%;
-}
-
-#contact .map {
-  margin-bottom: 3%;
-}
-
-/* ===== END ADDITION ===== */
 
 /* Style rules for table */
 
@@ -260,12 +248,12 @@ tr:nth-child(odd) {
 }
 
 #contact {
-    text-align: center;
+  text-align: center;
 }
 
 #contact .map {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto 5%;   /* Ensures spacing even if overridden */
 }
 
 /* Style rules for form elements */
@@ -274,12 +262,10 @@ fieldset, input {
   margin-bottom: 2%;
 }
 
-/* ===== ADDED FIELDSET STRUCTURE ===== */
 fieldset {
   padding: 2%;
   border: 1px solid #373684;
 }
-/* ===== END ADDITION ===== */
 
 fieldset legend {
   font-weight: bold;
@@ -320,53 +306,52 @@ footer a {
 
 @media screen and (min-width: 550px), print {
 
-    .tab-desk {
-        display: block;
-    }
+  .tab-desk {
+    display: block;
+  }
 
-    .mobile {
-        display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
-    span.tab-desk {
-        display: inline;
-    }
+  span.tab-desk {
+    display: inline;
+  }
 
-    nav li {
-        border-top: none;
-        display: inline-block;
-        font-size: 1.5em;
-        border-right: 1px solid #e5e9fc;
-    }
+  nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.5em;
+    border-right: 1px solid #e5e9fc;
+  }
 
-    nav li:last-child {
-        border-right: none;
-    }
+  nav li:last-child {
+    border-right: none;
+  }
 
-    nav li a {
-        padding: 0.25em 0.5em;
-    }
+  nav li a {
+    padding: 0.25em 0.5em;
+  }
 
-    .map {
-        width: 500px;
-        height: 450px;
-    }
+  .map {
+    width: 70%;
+    height: 350px;
+  }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 
-    aside {
-        grid-column: 1 / span 2;
-    }
+  aside {
+    grid-column: 1 / span 2;
+  }
 
-    form {
-        width: 70%;
-        margin: 0 auto;
-    }
-
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /* ============================= */
@@ -375,68 +360,67 @@ footer a {
 
 @media screen and (min-width: 769px), print {
 
-    header {
-        padding: 2%;
-    }
+  header {
+    padding: 2%;
+  }
 
-    nav li a {
-        padding: 0.5em 1.5em;
-    }
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
 
-    nav li a:hover {
-        color: #373684;
-        background-color: #e5e9fc;
-    }
+  nav li a:hover {
+    color: #373684;
+    background-color: #e5e9fc;
+  }
 
-    #info ul {
-        margin-left: 5%;
-    }
+  #info ul {
+    margin-left: 5%;
+  }
 
-    main h3 {
-        font-size: 1.5em;
-    }
+  main h3 {
+    font-size: 1.5em;
+  }
 
-    #piano,
-    #guitar,
-    #violin {
-        width: 29%;
-        float: left;
-        margin: 0 2%;
-    }
+  #piano,
+  #guitar,
+  #violin {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+  }
 
-    .grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    aside {
-        grid-column: 1 / span 4;
-    }
+  aside {
+    grid-column: 1 / span 4;
+  }
 
-    figcaption {
-        font-size: 1em;
-    }
+  figcaption {
+    font-size: 1em;
+  }
 
-    table {
-        width: 70%;
-    }
+  table {
+    width: 70%;
+  }
 
-    .form-grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-    }
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
 
-    .btn {
-        grid-column: 1 / span 2;
-    }
-
+  .btn {
+    grid-column: 1 / span 2;
+  }
 }
 
 @media print {
 
-    body {
-        background-color: #fff;
-        color: #000;
-    }
+  body {
+    background-color: #fff;
+    color: #000;
+  }
 
 }
