@@ -336,6 +336,31 @@ footer a {
   text-decoration: none;
 }
 
+/* =========================
+   PRIVATE LESSONS SECTION
+========================= */
+
+#private-lessons{
+background-color:#dfe0f4;
+padding:1rem;
+margin-bottom:1rem;
+border-radius:6px;
+text-align:left;
+}
+
+#private-lessons h2{
+color:#373684;
+margin-bottom:0.5rem;
+}
+
+#private-lessons ul{
+margin-left:20px;
+}
+
+#private-lessons li{
+margin-bottom:6px;
+}
+
 /* ============================= */
 /* Media Query for Tablet Viewport */
 /* ============================= */
