@@ -95,7 +95,12 @@ nav li a:hover {
 /* =========================
    HIDE tab-desk CLASS
 ========================= */
+
 .tab-desk {
+  display: none;
+}
+
+#menu-links {
   display: none;
 }
 
