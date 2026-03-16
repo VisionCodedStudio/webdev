@@ -2,111 +2,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <!-- Date: March 15, 2026 -->
+<!-- Mobile viewport for responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Mobile viewport for responsive design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strike a Chord | Lessons</title>
 
-  <title>Strike a Chord | Lessons</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+
+<div id="menu-links">
+<a href="index.html">Home</a>
+<a href="lessons.html">Lessons</a>
+<a href="instructors.html">Instructors</a>
+<a href="rentals.html">Rentals</a>
+<a href="contact.html">Contact Us</a>
+</div>
+
+<a class="menu-icon" onclick="hamburger()">
+<div>&#9776;</div>
+</a>
+
+</nav>
+
 <header>
-  <h1>
-    <span class="tab-desk">&#9836;</span>
-    Strike a Chord
-    <span class="tab-desk">&#9836;</span>
-  </h1>
+<h1>
+<span class="tab-desk">&#9836;</span>
+Strike a Chord
+<span class="tab-desk">&#9836;</span>
+</h1>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="lessons.html">Lessons</a></li>
-    <li><a href="instructors.html">Instructors</a></li>
-    <li><a href="rentals.html">Rentals</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<nav class="tab-desk">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="lessons.html">Lessons</a></li>
+<li><a href="instructors.html">Instructors</a></li>
+<li><a href="rentals.html">Rentals</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
 
 <!-- Hero Image -->
 <div id="hero" class="tab-desk">
-  <img src="image/music-notes.png" alt="Colorful music notes">
+<img src="image/music-notes.png" alt="Colorful music notes">
 </div>
 
 <main>
 
- <section id="piano">
-  <h2>Piano Lessons</h2>
+<section id="piano">
+<h2>Piano Lessons</h2>
 
-  <img src="image/piano-lesson.jpg" alt="Student learning piano">
+<img src="image/piano-lesson.jpg" alt="Student learning piano">
 
-  <p>
-    Learn piano from experienced instructors. Lessons are available for beginners through advanced students.
-  </p>
+<p>
+Learn piano from experienced instructors. Lessons are available for beginners through advanced students.
+</p>
 
-    <h4>Piano Spring Performance</h4>
-    <audio controls>
-      <source src="media/piano.mp3" type="audio/mp3">
-      <source src="media/piano.ogg" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
-  </section>
+<h4>Piano Spring Performance</h4>
+<audio controls>
+<source src="media/piano.mp3" type="audio/mp3">
+<source src="media/piano.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</section>
 
-  <section id="guitar">
-    <h2>Guitar Lessons</h2>
+<section id="guitar">
+<h2>Guitar Lessons</h2>
 
-    <img src="image/child-guitar.jpg" alt="Student playing guitar">
-    
-    <p>
-      Our guitar lessons focus on technique, music theory, and performance skills.
-    </p>
+<img src="image/child-guitar.jpg" alt="Student playing guitar">
 
-    <h4>Guitar Winter Performance</h4>
-    <audio controls>
-      <source src="media/guitar.mp3" type="audio/mp3">
-      <source src="media/guitar.ogg" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
-  </section>
+<p>
+Our guitar lessons focus on technique, music theory, and performance skills.
+</p>
 
-  <section id="violin">
-    <h2>Violin Lessons</h2>
+<h4>Guitar Winter Performance</h4>
+<audio controls>
+<source src="media/guitar.mp3" type="audio/mp3">
+<source src="media/guitar.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</section>
 
-    <img src="image/woman-violin.jpg" alt="Student playing violin">
-    
-    <p>
-      Violin lessons are available for all ages and skill levels.
-    </p>
+<section id="violin">
+<h2>Violin Lessons</h2>
 
-    <h4>Violin Spring Performance</h4>
-    <audio controls>
-      <source src="media/violin.mp3" type="audio/mp3">
-      <source src="media/violin.ogg" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
-  </section>
+<img src="image/woman-violin.jpg" alt="Student playing violin">
 
-  <section id="info">
-    <p class="action">
-      Sign up today and receive your first lesson <span class="action">FREE</span>!
-    </p>
-  </section>
+<p>
+Violin lessons are available for all ages and skill levels.
+</p>
+
+<h4>Violin Spring Performance</h4>
+<audio controls>
+<source src="media/violin.mp3" type="audio/mp3">
+<source src="media/violin.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</section>
+
+<section id="info">
+<p class="action">
+Sign up today and receive your first lesson <span class="action">FREE</span>!
+</p>
+</section>
 
 </main>
 
 <footer>
-  <p>Email: abennett1385@student.gwinnetttech.edu</p>
-  <p>Call us: <a href="tel:+17705551234">(770) 555-1234</a></p>
-  <p>© 2026 Strike a Chord</p>
+<p>Email: abennett1385@student.gwinnetttech.edu</p>
+<p>Call us: <a href="tel:+17705551234">(770) 555-1234</a></p>
+<p>© 2026 Strike a Chord</p>
 </footer>
 
 </body>
