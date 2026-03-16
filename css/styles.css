@@ -430,7 +430,8 @@ padding:0.5em 1.5em;
 
 nav li a:hover{
 color:#373684;
-background:#e5e9fc;
+background-color:#e5e9fc;
+transform: scale(1.2);
 }
 
 #info ul{
