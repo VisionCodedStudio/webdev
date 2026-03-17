@@ -82,9 +82,9 @@ position:relative;
 .mobile-nav a{
 color:#fff;
 text-align:center;
-font-size:2em;
+font-size:1.5em;
 text-decoration:none;
-padding:3%;
+padding:10px 0;
 display:block;
 }
 
