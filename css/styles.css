@@ -80,12 +80,8 @@ position:relative;
 }
 
 .mobile-nav a{
-color:#fff;
-text-align:center;
-font-size:2em;
-text-decoration:none;
-padding:3%;
-display:block;
+font-size:1.5em;
+padding:10px 0;
 }
 
 .mobile-nav a.menu-icon{
@@ -96,13 +92,9 @@ top:0;
 }
 
 .menu-icon div{
-height:50px;
-width:50px;
-background:#373684;
-color:#fff;
-text-align:center;
-line-height:50px;
-font-size:1.5em;
+height:45px;
+width:45px;
+line-height:45px;
 }
 
 /* =========================
