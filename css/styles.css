@@ -394,6 +394,8 @@ border-right:none;
 
 nav li a{
 padding:0.25em 0.5em;
+color:#ffffff;
+text-decoration:none;
 }
 
 .map{
