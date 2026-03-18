@@ -82,9 +82,9 @@ position:relative;
 .mobile-nav a{
 color:#fff;
 text-align:center;
-font-size:1.5em;
+font-size:2em;
 text-decoration:none;
-padding:10px 0;
+padding:3%;
 display:block;
 }
 
@@ -96,14 +96,15 @@ top:0;
 }
 
 .menu-icon div{
-height:45px;
-width:45px;
-background:#373684;
+height:50px;
+width:50px;
+background-color:#373684;
 color:#fff;
 text-align:center;
-line-height:45px;
+line-height:50px;
 font-size:1.5em;
 }
+
 /* =========================
 HIDE DESKTOP ELEMENTS
 ========================= */
@@ -357,8 +358,8 @@ text-decoration:none;
 /* TABLET MEDIA QUERY */
 /* ============================= */
 
-@media screen and (min-width:550px),print{
-
+@media screen and (min-width:550px){
+  
 .tab-desk{
 display:block;
 }
@@ -421,8 +422,8 @@ margin:0 auto;
 /* DESKTOP MEDIA QUERY */
 /* ============================= */
 
-@media screen and (min-width:769px),print{
-
+@media screen and (min-width:769px){
+  
 header{
 padding:2%;
 }
@@ -434,6 +435,7 @@ padding:0.5em 1.5em;
 nav li a:hover{
 color:#373684;
 background-color:#e5e9fc;
+transform:scale(1.2);
 }
 
 #info ul{
