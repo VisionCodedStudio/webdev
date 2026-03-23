@@ -443,9 +443,8 @@ margin:0 auto;
 
 .copyright{
     float:left;
-    width:70%;
-    text-align:center;
-    margin-left:15%;   /* 🔥 centers it visually */
+    width:65%;
+    text-align:left;
 }
     
 } /* CLOSE TABLET */
