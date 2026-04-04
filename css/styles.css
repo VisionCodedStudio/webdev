@@ -364,9 +364,10 @@ footer a{
 
 /* =========================
 BOOTSTRAP ADDITIONS (FIXED)
+ONLY FOR HOMEPAGE
 ========================= */
 
-.hero {
+.home-page .hero {
   background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../images/music-notes.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -374,19 +375,19 @@ BOOTSTRAP ADDITIONS (FIXED)
   padding: 120px 0;
 }
 
-.bg-dark-purple {
+.home-page .bg-dark-purple {
   background-color: #373684 !important;
 }
 
-.text-dark-purple {
+.home-page .text-dark-purple {
   color: #373684;
 }
 
-.welcome {
+.home-page .welcome {
   margin-top: 10%;
 }
 
-body {
+.home-page {
   padding-top: 60px;
 }
 
